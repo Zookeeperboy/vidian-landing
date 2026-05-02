@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --vidian-bg: #0E1418;
+  --vidian-surface: #1A2128;
+  --vidian-surface-2: #2A323D;
+  --vidian-fg: #F0F2F4;
+  --vidian-muted: #8E9AA6;
+  --vidian-dim: #5A6470;
+  --vidian-accent: #3D7A8C;
+  --vidian-accent-soft: rgba(61, 122, 140, 0.12);
+  --vidian-border: rgba(240, 242, 244, 0.08);
+
+  --vidian-color-obsidiana: #0E1418;
+  --vidian-color-grafito: #2A323D;
+  --vidian-color-acero: #8E9AA6;
+  --vidian-color-rio: #3D7A8C;
+  --vidian-color-niebla: #F0F2F4;
+
+  --vidian-font-display: 'Space Grotesk', system-ui, sans-serif;
+  --vidian-font-body: 'Inter', system-ui, sans-serif;
+  --vidian-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --vidian-fw-light: 300;
+  --vidian-fw-regular: 400;
+  --vidian-fw-medium: 500;
+  --vidian-fw-semibold: 600;
+  --vidian-fw-bold: 700;
+
+  --vidian-fs-xs: 0.75rem;
+  --vidian-fs-sm: 0.875rem;
+  --vidian-fs-base: 1rem;
+  --vidian-fs-md: 1.125rem;
+  --vidian-fs-lg: 1.25rem;
+  --vidian-fs-xl: 1.5rem;
+  --vidian-fs-2xl: 2rem;
+  --vidian-fs-3xl: 2.75rem;
+  --vidian-fs-4xl: 3.5rem;
+  --vidian-fs-5xl: 4.5rem;
+  --vidian-fs-display: 6.5rem;
+
+  --vidian-lh-tight: 0.95;
+  --vidian-lh-snug: 1.2;
+  --vidian-lh-normal: 1.55;
+  --vidian-lh-loose: 1.7;
+
+  --vidian-tracking-tight: -0.04em;
+  --vidian-tracking-snug: -0.02em;
+  --vidian-tracking-normal: 0;
+  --vidian-tracking-wide: 0.08em;
+  --vidian-tracking-mono: 0.18em;
+
+  --vidian-space-0: 0;
+  --vidian-space-1: 0.25rem;
+  --vidian-space-2: 0.5rem;
+  --vidian-space-3: 0.75rem;
+  --vidian-space-4: 1rem;
+  --vidian-space-5: 1.25rem;
+  --vidian-space-6: 1.5rem;
+  --vidian-space-8: 2rem;
+  --vidian-space-10: 2.5rem;
+  --vidian-space-12: 3rem;
+  --vidian-space-16: 4rem;
+  --vidian-space-20: 5rem;
+  --vidian-space-24: 6rem;
+
+  --vidian-radius-none: 0;
+  --vidian-radius-sm: 2px;
+  --vidian-radius-md: 4px;
+  --vidian-radius-pill: 999px;
+
+  --vidian-border-width: 1px;
+  --vidian-border-thick: 2px;
+
+  --vidian-stroke-icon: 2px;
+
+  --vidian-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --vidian-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --vidian-shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.4);
+  --vidian-shadow-accent: 0 12px 32px rgba(61, 122, 140, 0.25);
+
+  --vidian-transition-fast: 150ms ease;
+  --vidian-transition-base: 240ms ease;
+  --vidian-transition-slow: 400ms ease;
+
+  --vidian-container-max: 1440px;
+  --vidian-container-padding: 3.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--vidian-bg);
+  color: var(--vidian-fg);
+  font-family: var(--vidian-font-body);
+  font-size: var(--vidian-fs-base);
+  line-height: var(--vidian-lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--vidian-accent);
+  color: var(--vidian-fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--vidian-font-display);
+  font-weight: var(--vidian-fw-semibold);
+  letter-spacing: var(--vidian-tracking-snug);
+  line-height: var(--vidian-lh-snug);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-size: var(--vidian-fs-display);
+  letter-spacing: var(--vidian-tracking-tight);
+  line-height: var(--vidian-lh-tight);
+}
+
+h2 { font-size: var(--vidian-fs-4xl); }
+h3 { font-size: var(--vidian-fs-3xl); }
+h4 { font-size: var(--vidian-fs-2xl); }
+h5 { font-size: var(--vidian-fs-xl); }
+h6 { font-size: var(--vidian-fs-lg); }
+
+p {
+  margin: 0 0 var(--vidian-space-4) 0;
+  color: var(--vidian-muted);
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--vidian-fg);
+  text-decoration: none;
+  transition: color var(--vidian-transition-fast);
+}
+
+a:hover {
+  color: var(--vidian-accent);
+}
+
+code, pre, .mono {
+  font-family: var(--vidian-font-mono);
+  font-size: var(--vidian-fs-sm);
+  letter-spacing: var(--vidian-tracking-normal);
+}
+
+.eyebrow {
+  font-family: var(--vidian-font-mono);
+  font-size: var(--vidian-fs-xs);
+  font-weight: var(--vidian-fw-medium);
+  letter-spacing: var(--vidian-tracking-mono);
+  text-transform: uppercase;
+  color: var(--vidian-dim);
+}
+
+.container {
+  max-width: var(--vidian-container-max);
+  margin: 0 auto;
+  padding: 0 var(--vidian-container-padding);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--vidian-space-3);
+  padding: var(--vidian-space-4) var(--vidian-space-6);
+  font-family: var(--vidian-font-display);
+  font-size: var(--vidian-fs-sm);
+  font-weight: var(--vidian-fw-medium);
+  letter-spacing: var(--vidian-tracking-snug);
+  border: var(--vidian-border-width) solid transparent;
+  background: var(--vidian-accent);
+  color: var(--vidian-fg);
+  cursor: pointer;
+  transition: all var(--vidian-transition-base);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--vidian-shadow-accent);
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--vidian-border);
+  color: var(--vidian-fg);
+}
+
+.btn--ghost:hover {
+  background: var(--vidian-accent-soft);
+  border-color: var(--vidian-accent);
+  transform: none;
+  box-shadow: none;
+}

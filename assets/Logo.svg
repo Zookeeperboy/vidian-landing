@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#0E1418"></rect>
+
+  <g id="isotype" transform="translate(60, 60)">
+    <defs>
+      <clipPath id="vidian-v-mask">
+        <polygon points="0,0 80,0 40,72"></polygon>
+      </clipPath>
+    </defs>
+    <g id="isotype-strata" clip-path="url(#vidian-v-mask)">
+      <rect x="0" y="0" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="9" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="18" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="27" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="36" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="45" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="54" width="80" height="4" fill="#F0F2F4"></rect>
+      <rect x="0" y="63" width="80" height="4" fill="#F0F2F4"></rect>
+    </g>
+  </g>
+
+  <line x1="170" y1="60" x2="170" y2="140" stroke="#3D7A8C" stroke-width="1" opacity="0.5"></line>
+
+  <g id="wordmark" transform="translate(200, 0)">
+    <text x="0" y="118" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="84" font-weight="600" letter-spacing="-3" fill="#F0F2F4">Vidian<tspan fill="#3D7A8C">.</tspan></text>
+    <text x="3" y="148" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="12" font-weight="500" letter-spacing="3" fill="#8E9AA6">SOLUCIONES  TI</text>
+  </g>
+</svg>
